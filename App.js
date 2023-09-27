@@ -13,7 +13,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        
+        <Stack.Screen name="LandingScreen" options={{ headerShown: false }} >
+          {() => <LandingScreen />}
+        </Stack.Screen>
+        <Stack.Screen name="CountdownScreen" options={{ headerShown: false }} >
+          {() => <CountdownScreen />}
+        </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>    
   );
